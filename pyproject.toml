@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gv-python"
+version = "0.1.0"
+description = "Graphical Vision with Python"
+authors = ["VoshVolk <hinosato01@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7,<3.11"
+numpy = "^1.21.5"
+opencv-python = "^4.5.5"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+mypy = "^0.930"
+pytest = "^6.2.5"
+flake8 = "^4.0.1"
+tox = "^3.24.4"
+flake8-isort = "^4.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
