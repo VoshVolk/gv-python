@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "gv-python"
-version = "0.1.0"
+version = "0.0.1"
 description = "Graphical Vision with Python"
 authors = ["VoshVolk <hinosato01@gmail.com>"]
 
@@ -8,6 +8,7 @@ authors = ["VoshVolk <hinosato01@gmail.com>"]
 python = "^3.7,<3.11"
 numpy = "^1.21.5"
 opencv-python = "^4.5.5"
+pyocr = "^0.8.1"
 
 [tool.poetry.dev-dependencies]
 black = "^21.12b0"
