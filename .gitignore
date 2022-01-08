@@ -1,5 +1,12 @@
 .DS_Store
 .vscode
+*.bmp
+*.gif
+*.jpg
+*.png
+*.tif
+*.tiff
+*.webp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
