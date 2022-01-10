@@ -13,3 +13,7 @@ def ocr():
         action="store_true",
         help="Give more output."
     )
+
+
+def pdftoimg():
+    pass

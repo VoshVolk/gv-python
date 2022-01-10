@@ -2,7 +2,10 @@
 name = "gv-python"
 version = "0.0.1"
 description = "Graphical Vision with Python"
-authors = ["VoshVolk <hinosato01@gmail.com>"]
+authors = ["Vosh Volk <hinosato01@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/VoshVolk/gv-python"
 
 [tool.poetry.dependencies]
 python = "^3.7,<3.11"
@@ -21,3 +24,28 @@ flake8-isort = "^4.1.1"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+py_version = 36
+profile = "black"
+force_single_line = true
+combine_as_imports = true
+lines_between_types = 1
+lines_after_imports = 2
+src_paths = ["src", "tests"]
+extend_skip = ["setup.py"]
+
+[tool.black]
+target-version = ['py36']
+force-exclude = '''
+.*/setup\.py$
+'''
+
+[tool.mypy]
+check_untyped_defs = true
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+files = "src"
+
